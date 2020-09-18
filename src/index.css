@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+	background-color: rgb(255, 255, 255) !important;
+	font-family: 'Poppins';
+}
+.rc {
+	font-family: 'Poppins', sans-serif;
+}
+.rc.bold {
+	font-weight: 700;
+}
+.rc.semibold {
+	font-weight: 600;
+}
+img {
+	width: 100%;
+}
+.main-cont {
+	min-height: 71vh;
+	padding-bottom: 5rem;
+}
+.custom-parallax {
+	/* background:white; */
+	max-height: 150px !important;
+	max-width: 900px;
+	margin-left: 10rem;
+	z-index: 1 !important;
+}
+header {
+	margin-bottom: -1rem !important;
+	z-index: 2 !important;
+}
+.header-icon-button {
+	transform: translateY(0.1rem);
+}
+.menu-shadow-primary {
+	box-shadow: none !important;
+}
+.product-listing {
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
+	color: #333 !important;
+}
+
+.product-listing img {
+	max-width: 100%;
+}
+.product-listing .prod-desc {
+	text-align: center;
+	position: relative;
+}
+.product-listing .prod-name-overlay {
+	position: absolute;
+	width: 60%;
+	height: 1.2rem;
+	top: 0.2rem;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #ddd;
+}
+.product-listing .prod-price-overlay {
+	position: absolute;
+	width: 20%;
+	height: 1rem;
+	top: 1.6rem;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #ddd;
+}
+.product-listing .mock-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #eee;
+}
+
+.product-listing .prod-img-wrapper {
+	position: relative;
+}
+
+.product-listing .prod-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 0.3s;
+	opacity: 0;
+}
+.product-listing.mock .prod-overlay {
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+	opacity: 1;
+}
+.product-listing.mock .prod-overlay span {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	color: #888;
+}
+
+.product-listing .prod-overlay a {
+	padding: 1rem;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.product-listing .prod-overlay a:hover {
+	background: #fff;
+	color: #333;
+}
+.prod-display {
+	text-align: center;
+	padding-right: 2rem;
+	padding-left: 2em;
+}
+.my-footer {
+	width: 100%;
+	background: #fff;
+	border-top: 1px solid #ddd;
+	padding: 2rem;
+	text-align: center;
+}
+
+.quantity-field {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.quantity-field .value-button {
+	border: 1px solid #ddd;
+	margin: 0px;
+	width: 40px;
+	height: 100%;
+	padding: 0;
+	background: #eee;
+	outline: none;
+	cursor: pointer;
+}
+
+.quantity-field .value-button:hover {
+	background: rgb(230, 230, 230);
+}
+
+.quantity-field .value-button:active {
+	background: rgb(210, 210, 210);
+}
+
+.quantity-field .decrease-button {
+	margin-right: -4px;
+	border-radius: 8px 0 0 8px;
+}
+
+.quantity-field .increase-button {
+	margin-left: -4px;
+	border-radius: 0 8px 8px 0;
+}
+
+.quantity-field .number {
+	display: inline-block;
+	text-align: center;
+	border: none;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	margin: 0px;
+	width: 40px;
+	height: 100%;
+	line-height: 40px;
+	font-size: 11pt;
+	box-sizing: border-box;
+	background: white;
+	font-family: calibri;
+}
+
+.quantity-field .number::selection {
+	background: none;
+}
+.add-to-cart {
+	background-color: #000;
+	border: none;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 18px 75px;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.add-to-cart:hover {
+	opacity: 0.6;
+}
+/*
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+*/
+.hamburger-menu {
+	display: none;
+}
+.hamburger-menu-show li,
+.hamburger-menu li {
+	background-color: whitesmoke;
+}
+.hamburger-menu-show {
+	display: block;
+	position: absolute;
+	top: 85px;
+	right: 0;
+	transition: 0.5s;
+	box-shadow: 5px 10px 18px #888888;
+}
+.cart-drawer {
+	width: 400px;
+}
+@media only screen and (max-width: 425px) {
+	.swipe p {
+		font-size: 12px;
+	}
+}
+.continue-shopping {
+	padding: 15px 50px;
+	width: 100%;
+	background: #fff;
+	font-size: 15px;
+	border: 1px solid grey;
+	margin-top: 40px;
+	color: #000;
+	position: relative;
+}
+
+.continue-shopping:hover {
+	color: #000;
+}
+.cart-image {
+	width: 70%;
+}
+
+.cart-footer {
+	position: absolute;
+	bottom: 0;
+}

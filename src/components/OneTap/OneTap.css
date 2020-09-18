@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.tap-btn {
+	background-color: #000;
+	border: none;
+	color: rgb(255, 255, 255);
+	font-family: 'Poppins';
+	border-radius: 5px;
+	cursor: pointer;
+	padding-top: 12px;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-bottom: 12px;
+}
+.tap-btn:hover {
+	opacity: 0.6;
+}
+
+.tap-btn-img {
+	width: 59px;
+	padding-bottom: 7px;
+	padding-right: 6px;
+}
+
+.tap-btn span {
+	font-size: 1.2rem;
+}
